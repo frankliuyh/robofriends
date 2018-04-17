@@ -1,9 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Hello from './Hello';
+import Card from './Card';
 import registerServiceWorker from './registerServiceWorker';
 import 'tachyons'
+import { robots } from './robots'
 
-ReactDOM.render(<Hello greeting={'Hello React Ninja'}/>, document.getElementById('root'));
+ReactDOM.render(<Card id={ robots[0].id } name={ robots[0].name } email={ robots[0].email }/>, document.getElementById('root'));
 registerServiceWorker();
